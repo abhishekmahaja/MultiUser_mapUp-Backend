@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import nodemailer from "nodemailer";
 import twilio from "twilio";
 import { v2 as cloudinary } from "cloudinary";

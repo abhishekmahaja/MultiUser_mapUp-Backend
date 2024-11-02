@@ -1,4 +1,5 @@
 import Organization from "../Models/organizationModel.js";
+import bcrypt from "bcryptjs";
 import { AwsInstance } from "twilio/lib/rest/accounts/v1/credential/aws.js";
 
 //ADMIN TO CREATE ORGANIZATION

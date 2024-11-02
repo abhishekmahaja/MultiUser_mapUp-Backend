@@ -5,14 +5,12 @@
   "description": "oil petrolium",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "postinstall": "npm rebuild bcrypt --build-from-source"
-  },
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+},
   "author": "abhi mahajan",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "bfg": "^0.3.0",
     "cloudinary": "^2.4.0",
@@ -30,5 +28,8 @@
     "otp-generator": "^4.0.1",
     "textmagic-rest-client": "^1.0.11",
     "twilio": "^5.2.2"
-  }
+  },
+  "engines": {
+  "node": "18.x"
+}
 }
