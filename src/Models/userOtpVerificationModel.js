@@ -1,9 +1,9 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const userOTPVerificationSchema = new mongoose.Schema({
   userId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+    ref: "User",
     required: true,
   },
   emailOTP: {
@@ -30,6 +30,9 @@ const userOTPVerificationSchema = new mongoose.Schema({
   },
 });
 
-const UserOTPVerification = mongoose.model('UserOTPVerification', userOTPVerificationSchema);
+const UserOTPVerification = mongoose.model(
+  "UserOTPVerification",
+  userOTPVerificationSchema
+);
 
 export default UserOTPVerification;

@@ -762,6 +762,8 @@ export const sendOTPLogin = async (req, res) => {
     // Ensure the OTP is unique
     let emailResult = await OTP.findOne({ emailOtp });
 
+    // console.log("login otp",emailOtp)
+
     while (emailResult) {
       emailOtp = otpGenerator.generate(6, {
         upperCaseAlphabets: false,
@@ -922,6 +924,8 @@ export const forgotPassword = async (req, res) => {
 
       emailResult = await OTP.findOne({ emailOtp });
     }
+
+    // console.log("forgot otp",emailOtp)
 
     const newOTP = await OTP.create({
       emailOtp: emailOtp,
