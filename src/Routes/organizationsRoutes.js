@@ -1,5 +1,6 @@
 import express from "express";
 import {
+  addDepartment,
   departmentBaseOrgNameDropdown,
   organizationDropDown,
 } from "../Controllers/organizationController.js";
@@ -10,5 +11,6 @@ organizationRouter.post(
   "/department-base-org-name-dropdown",
   departmentBaseOrgNameDropdown
 );
+organizationRouter.post("/add-department", addDepartment);
 
 export default organizationRouter;
