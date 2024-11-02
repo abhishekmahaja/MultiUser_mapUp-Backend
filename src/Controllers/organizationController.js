@@ -1,4 +1,3 @@
-import bcrypt from "bcryptjs";
 import Organization from "../Models/organizationModel.js";
 import { AwsInstance } from "twilio/lib/rest/accounts/v1/credential/aws.js";
 
